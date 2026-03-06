@@ -65,7 +65,7 @@ p {
     font-weight: bold;
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0 5px 0px #bf360c;
+    /* box-shadow: 0 5px 0px #bf360c; */
     transition: all 0.2s ease; 
     position: absolute; 
 }
