@@ -84,7 +84,7 @@ p {
 .naughty-button:hover {
     
     transform: translate(-150px, 60px) scale(0.8) rotate(-15deg) !important;
-    background-color: #9c27b0 !important; 
+    background-color: #9c27b0 ; 
 }
 
 .footer-text {
