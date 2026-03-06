@@ -1,0 +1,101 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+body {
+    background-color: #ffeb3b; 
+    background-image: radial-gradient(#fbc02d 1px, transparent 1px);
+    background-size: 20px 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; 
+}
+.main-container {
+    text-align: center;
+    background: white;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 20px 0px rgba(0,0,0,0.1); 
+    border: 5px solid #333;
+    max-width: 90%;
+}
+
+.emoji {
+    font-size: 4rem;
+    animation: wiggle 2s linear infinite; 
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #e91e63; 
+
+}
+
+p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.game-area {
+    position: relative;
+    height: 150px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.naughty-button {
+    background-color: #ff5722; 
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 0px #bf360c;
+    transition: all 0.2s ease; 
+    position: absolute; 
+}
+
+.naughty-button:active {
+    box-shadow: 0 2px 0px #bf360c;
+    transform: translateY(3px);
+}
+
+.game-area:hover .naughty-button {
+    
+    transform: translate(150px, -60px) rotate(15deg);
+    background-color: #8bc34a; 
+}
+
+.naughty-button:hover {
+    
+    transform: translate(-150px, 60px) scale(0.8) rotate(-15deg) !important;
+    background-color: #9c27b0 !important; 
+}
+
+.footer-text {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #888;
+    font-style: italic;
+}
+
+
+@keyframes wiggle {
+    0%, 100% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+}
